@@ -1,0 +1,16 @@
+<div class="container">
+
+  <form name="loginForm" class="form-signin" ng-submit="login()">
+
+    <h2 class="form-signin-heading">Notification Service App</h2>
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input type="email" id="inputEmail" ng-model="loginData.email" class="form-control" placeholder="Email address" required autofocus>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" ng-model="loginData.password" class="form-control" placeholder="Password" required>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    <p>{{ ErrorMessage }}</p>
+    <div ui-sref="signup"><a href>Register</a></div>
+  </form>
+
+</div>

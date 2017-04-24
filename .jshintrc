@@ -1,0 +1,11 @@
+{
+	"node": true,
+	"strict": true,
+	"expr": true,
+	"globals": {
+		"angular": false,
+		"inject": false,
+		"describe": false,
+		"it": false
+	}
+}

@@ -1,0 +1,16 @@
+<form name="user.form" class="form-signin" ng-submit="addUser()">
+
+  <h2 class="form-signin-heading"><small>Create New User</small></h2>
+  <label for="inputEmail" class="sr-only">Email address</label>
+  <input type="email" id="inputEmail" ng-model="userData.email" class="form-control" placeholder="Email address" required autofocus><br>
+
+  <label for="inputPassword" class="sr-only">Password</label>
+  <input type="password" id="inputPassword" ng-model="userData.password" class="form-control" placeholder="Password" required>
+
+  <label for="inputUsername" class="sr-only">Username</label>
+  <input type="text" id="inputUsername" ng-model="userData.username" class="form-control" placeholder="Username" required><br>
+
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Add</button>
+  <p>{{errorMessage}}</p>
+
+</form>
